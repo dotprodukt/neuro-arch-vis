@@ -9,6 +9,13 @@ import { ribbon as ribbonFactory, RibbonSubgroup } from "d3-chord";
 //import {} from "d3-path"
 import "./style/base.less";
 
+import { createStore } from "redux";
+
+import reducer from "./reducer";
+
+const store = createStore(reducer,undefined);
+
+
 type NodeType = HierarchyNode<NodeData> & RibbonSubgroup & {x:number,y:number,x0:number,x1:number,y0:number,y1:number,color:string};
 
 const root:NodeType = hierarchy<NodeData>(data) as NodeType;
