@@ -1,0 +1,50 @@
+body {
+  background-color: #111;
+}
+
+.link {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.66;
+  stroke-dasharray: 2,3,4,3;
+  opacity: 1.0;
+  animation-name: movingDashes;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  mix-blend-mode: screen;
+}
+
+.ribbon {
+  //stroke: white;
+  opacity: 0.25;
+  stroke-width: 0.66;
+  mix-blend-mode: screen;
+}
+
+.node {
+  font-family: sans-serif;
+  font-size: 6pt;
+}
+
+svg {
+  text-rendering: geometricPrecision;
+  shape-rendering: geometricPrecision;
+}
+
+.sector {
+  //fill: #e0e0e0;
+}
+
+svg>g>circle {
+  fill: #111;
+}
+
+@keyframes movingDashes {
+  from {
+    stroke-dashoffset: 12;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

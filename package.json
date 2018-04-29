@@ -1,0 +1,60 @@
+{
+  "name": "neural-architecture",
+  "version": "0.0.0",
+  "description": "Interactive vizualisation for exploring the network structure of the Human brain.",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "watch": "webpack --progress --colors --watch",
+    "serve": "webpack-dev-server --progress --colors"
+  },
+  "author": "Brian Wiggins",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/d3": "^4.11.0",
+    "@types/d3-scale-chromatic": "^1.1.0",
+    "@types/react": "^16.0.10",
+    "@types/react-dom": "^16.0.1",
+    "@types/react-redux": "^5.0.10",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "d3": "^4.11.0",
+    "d3-scale-chromatic": "^1.2.0",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-range": "^1.0.1",
+    "semantic-ui-react": "^0.76.0",
+    "ts-loader": "^2.3.7",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.5.3",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 Chrome versions"
+            ]
+          }
+        }
+      ],
+      "react"
+    ]
+  }
+}
